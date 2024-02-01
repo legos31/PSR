@@ -1,0 +1,25 @@
+{
+    "autoload-dev": {
+        "psr-4": {
+            "Framework\\Tests\\": "framework/tests/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+
+    "repositories": [{
+        "type": "path",
+        "url": "framework"
+    }],
+    "require": {
+        "php": "^8.0",
+        "oleg/fw_blond": "dev-main",
+        "psr/event-dispatcher": "^1.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "*"
+    }
+}

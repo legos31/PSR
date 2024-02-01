@@ -1,0 +1,19 @@
+{% extends 'default.html.twig' %}
+
+{% block main %}
+    {% if session.hasFlash('success')%}
+        <div class="alert alert-success">
+            {%  for message in session.getFlash('success') %}
+                <p>{{ message }}</p>
+            {%  endfor %}
+
+        </div>
+    {% endif %}
+    <div class="bg-body-tertiary p-5 rounded">
+        <h1>{{ post.title }}</h1>
+
+        <p class="lead">Hello! {{ post.body }}</p>
+        <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs &raquo;</a>
+    </div>
+
+{% endblock %}

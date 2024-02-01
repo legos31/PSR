@@ -1,0 +1,20 @@
+{% extends 'default.html.twig' %}
+{% block main %}
+
+    <div class="bg-body-tertiary p-5 rounded">
+    <form method="post" action="/posts">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Заголовок</label>
+            <input type="text" class="form-control" id="exampleTitle" name="title" required>
+            <div id="emailHelp" class="form-text">Сделайте заголовок броским!</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Контент</label>
+            <textarea type="text" class="form-control" id="exampleContent" name="body" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+{% endblock %}
